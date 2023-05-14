@@ -1,0 +1,31 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+get ipython().run_line_magic ('matplotlib', 'inline')
+from matplotlib import style
+
+MG = (17.891, 21.000)
+RJ = (14.391, 17.336)
+SP = (36.969, 46.289)
+
+xpos = no.arange (len(SP))
+xpos
+
+style.use('ggplot')
+plt.figure(figsize=(10,8))
+barWidth = 0.2
+plt.bar(xpos,MG,color='royalblue'
+plt.bar(xpos+0.2, RJ, color='red', width = barWidth, label='RJ')
+
+plt.bar(xpos+0.4, SP color='purple', width = barWidth, label='SP')
+
+
+plt.xticks(xpos+0.3, ('2000', '2020'))
+
+plt.xlabel('Ano')
+
+plt.ylabel('Quantidade Populacional em Milhões')
+
+plt.title('Crescimento Populacional')
+
+plt.legend()
